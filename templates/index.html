@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Chatbot</title>
+    <link rel="stylesheet" href="static\css\style.css">
+</head>
+<body>
+    <header class="terminal-header">
+        <div class="terminal-title">Terminal Chatbot</div>
+        <div class="terminal-controls">
+            <div class="terminal-control control-close"></div>
+            <div class="terminal-control control-minimize"></div>
+        </div>
+    </header>
+
+    <main class="chat-container">
+    
+    </main>
+
+    <footer class="input-container">
+        <form class="input-form">
+            <textarea class="message-input" placeholder="Type your message here..."></textarea>
+            
+            <div class="input-icons">
+                <div class="file-upload">
+                    <button type="button" class="icon-button upload-icon">
+                        <input type="file" accept="image/*,.pdf,.doc,.docx,.txt" multiple>
+                    </button>
+                </div>
+                
+                <button type="submit" class="icon-button send-icon"></button>
+            </div>
+            
+            <div class="file-info">Supports images, PDFs, and documents</div>
+            
+            <div class="typing-indicator">
+                <span>Chatbot is typing</span>
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+        </form>
+    </footer>
+
+
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
